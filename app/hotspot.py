@@ -1,3 +1,5 @@
+import app.wifi_direct as wifi_direct
+
 def enable_hotspot():
     # Logic to enable mobile hotspot
     # This is a placeholder as actual implementation requires platform-specific code
