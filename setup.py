@@ -1,14 +1,16 @@
 from flask import Flask
+import subprocess
 
 app = Flask(__name__)
 
 def enable_hotspot():
-    # Logic to enable mobile hotspot
-    # This is a placeholder as actual implementation requires platform-specific code
+    subprocess.run(["netsh", "wlan", "set", "hostednetwork", "mode=allow", "ssid=MyHotspot", "key=MyPassword"])
+    subprocess.run(["netsh", "wlan", "start", "hostednetwork"])
     print("Hotspot enabled")
 
 def discover_peers():
-    # Logic to discover peers using Wi-Fi Direct
+    # Actual implementation to discover peers using Wi-Fi Direct
+    # Write your code here
     # This is a placeholder as actual implementation requires platform-specific code
     peers = ["Device1", "Device2"]
     return peers
