@@ -84,3 +84,10 @@ Cross-Platform Compatibility: Consider making the app cross-platform (iOS, Windo
 Security: Implement basic security measures to prevent unauthorized access to the audio stream.
 Latency Minimization: Continuously optimize the transmission protocol to minimize latency and improve user experience.
 This updated plan should help you develop a solution that acts like a Bluetooth speaker system but operates over a local Wi-Fi hotspot, providing synchronized audio playback across multiple devices.
+
+Steps : 
+
+git clone https://github.com/yourusername/LocalMusicSpeaker.git
+cd LocalMusicSpeaker
+pip install -r requirements.txt
+python app/main.py
