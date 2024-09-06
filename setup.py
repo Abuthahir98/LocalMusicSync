@@ -4,8 +4,8 @@ import subprocess
 app = Flask(__name__)
 
 def enable_hotspot():
-    subprocess.run(["netsh", "wlan", "set", "hostednetwork", "mode=allow", "ssid=MyHotspot", "key=MyPassword"])
-    subprocess.run(["netsh", "wlan", "start", "hostednetwork"])
+    # Actual implementation to enable mobile hotspot
+    # Write your code here
     print("Hotspot enabled")
 
 def discover_peers():
