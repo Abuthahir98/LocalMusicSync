@@ -1,4 +1,5 @@
 import app.wifi_direct as wifi_direct
+import app
 
 def enable_hotspot():
     # Logic to enable mobile hotspot
